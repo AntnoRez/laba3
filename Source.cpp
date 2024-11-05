@@ -24,7 +24,7 @@ public:
         print_marks();
         cout << endl << endl;
     }
-    void setMarks(int i, int mark) //èçìåíÿòü îöåíêè
+    void setMarks(int i, int mark) //Ð¸Ð·Ð¼ÐµÐ½ÑÑ‚ÑŒ Ð¾Ñ†ÐµÐ½ÐºÐ¸
     {
         if (i < marks.size())
         {
@@ -68,9 +68,9 @@ public:
     line(int x1, int y1, int x2, int y2) : start(point(x1, y1)), end(point(x2, y2)) {}
     void print()
     {
-        cout << "Ëèíèÿ îò "; 
+        cout << "Ð›Ð¸Ð½Ð¸Ñ Ð¾Ñ‚ "; 
         start.print();
-        cout << " äî "; 
+        cout << " Ð´Ð¾ "; 
         end.print();
         cout << endl << endl;
     }
@@ -103,18 +103,18 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int a;
-    cout << "Íîìåðà çàäàíèé:\n1 2 3 4 5 \nÂûáåðèòå íîìåð çàäàíèÿ:";
+    cout << "ÐÐ¾Ð¼ÐµÑ€Ð° Ð·Ð°Ð´Ð°Ð½Ð¸Ð¹:\n1 2 3 4 5 \nÐ’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð·Ð°Ð´Ð°Ð½Ð¸Ñ:";
     cin >> a;
     switch (a)
     {
     case 1:
     {
         int x1, x2, x3, y1, y2, y3;
-        cout << "Ââåäèòå êîîðäèíàòû ïåðâîé òî÷êè (x, y):" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð¿ÐµÑ€Ð²Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ (x, y):" << endl;
         cin >> x1 >> x2;
-        cout << "Ââåäèòå êîîðäèíàòû âòîðîé òî÷êè (x, y):" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ (x, y):" << endl;
         cin >> x2 >> y2;
-        cout << "Ââåäèòå êîîðäèíàòû òðåòüåé òî÷êè (x, y):" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ñ€ÐµÑ‚ÑŒÐµÐ¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ (x, y):" << endl;
         cin >> x3 >> y3;
 
         point a(x1, x2);
@@ -182,7 +182,7 @@ int main()
     {
         line l(1, 1, 10, 5);
         l.print();
-        cout << "Äëèíà ëèíèè: " << l.length() << endl;
+        cout << "Ð”Ð»Ð¸Ð½Ð° Ð»Ð¸Ð½Ð¸Ð¸: " << l.length() << endl;
         break;
     }
     }
